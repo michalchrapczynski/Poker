@@ -12,7 +12,7 @@ public class ArbitrateDuelTest {
 		// given
 		String playerA = "QS KH 2C 3H 4C";
 		String playerB = "QS AH 2C 3H 4C";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -38,7 +38,7 @@ public class ArbitrateDuelTest {
 		// given
 		String playerA = "QS TH TC 3H 4C";
 		String playerB = "KS TH TC 3H 4C";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -51,7 +51,7 @@ public class ArbitrateDuelTest {
 		// given
 		String playerA = "QS TH 4C QH TC";
 		String playerB = "QS TH TC QH AC";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -72,11 +72,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test1_wrong() {
+	public void test_1_Poker_winPlayerA_random() {
 		// given
 		String playerA = "6H 8D 2D 9H JD";
 		String playerB = "6C 4S 5H 5S 6D";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -84,11 +84,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test2_wrong() {
+	public void test_1_Poker_winPlayerB_random() {
 		// given
 		String playerA = "TH 8H 5C QS TC";
 		String playerB = "9H 4D JC KS JS";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -96,11 +96,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test3_wrong() {
+	public void test_2_Poker_winPlayerB_random() {
 		// given
 		String playerA = "3D KH QD 6C 6S";
 		String playerB = "AD AS 8H 2H QS";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -108,7 +108,7 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test4_wrong() {
+	public void test_2_Poker_winPlayerA_random() {
 		// given
 		String playerA = "5H JH TS 7S TD";
 		String playerB = "6H AD QD 8H 8S";
@@ -120,11 +120,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test5_wrong() {
+	public void test_3_Poker_winPlayerB_random() {
 		// given
 		String playerA = "QS 9C QD 6H JS";
 		String playerB = "5D AC 8D 2S AS";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -132,11 +132,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test6_wrong() {
+	public void test_4_Poker_winPlayerB_random() {
 		// given
 		String playerA = "JH 8C 3D 3C 6C";
 		String playerB = "KC TD 7H 7C 4C";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -144,11 +144,11 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test7_wrong() {
+	public void test_5_Poker_winPlayerB_random() {
 		// given
 		String playerA = "8S 5D 8H 4C 6H";
 		String playerB = "KC 3H 7C 5S KD";
-		int expected = -1;
+		int expected = 2;
 		// when
 		int actual = battle.arbitrate(playerA, playerB);
 		// then
@@ -156,7 +156,7 @@ public class ArbitrateDuelTest {
 	}
 
 	@Test
-	public void test8_wrong() {
+	public void test_3_Poker_winPlayerA_random() {
 		// given
 		String playerA = "6H 4H 5C 3H 2H";
 		String playerB = "3S QH 5S 6S AS";

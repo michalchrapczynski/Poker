@@ -173,7 +173,7 @@ public class PokerTest {
 	}
 
 	@Test
-	public void test_wrong01() {
+	public void StraightFirstSix() {
 		// given
 		String info = "6H 4H 5C 3H 2H";
 		Straight expected = new Straight(CardValue.SIX);

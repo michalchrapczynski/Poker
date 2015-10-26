@@ -1,7 +1,5 @@
 package poker;
 
-import java.awt.HeadlessException;
-
 import poker.hand.Hand;
 
 public class ArbitrateDuel {
@@ -20,30 +18,19 @@ public class ArbitrateDuel {
 		Hand handPlayerB = parser.parse(playerB);
 
 		int result = 0;
-		/*
-		 * int winA = 0; int winB = 0; int remis = 0;
-		 */
 
 		int score = handPlayerA.compare(handPlayerB);
 
 		if (score > 0) {
-			// winA++;
+
 			result = 1;
 		} else if (score < 0) {
-			// winB++;
+
 			result = 2;
-		} else {
-			// remis++;
 		}
 
 		return result;
 
-		/*
-		 * System.out.println("Gracz piewszy wygral : " + winA + " razy");
-		 * System.out.println("Gracz drugi wygral : " + winB + " razy");
-		 * System.out.println("Liczba remisow to : " + remis);
-		 * System.out.println();
-		 */
 	}
 
 }
